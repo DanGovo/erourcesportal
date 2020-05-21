@@ -13,7 +13,7 @@
 
                         <div class="form-row">
                             <div class="form-group col-md-4">
-                                <input type="text" name="search" value="{{ old('search') }}" class="form-control" placeholder="Search company" />
+                                <input type="text" name="search" value="{{ old('search') }}" class="form-control" placeholder="Search E-Resource" />
                                 <p class="help-block"></p>
                                 @if($errors->has('name'))
                                     <p class="help-block">
@@ -57,7 +57,7 @@
                         </div>
 
                     </form>
-					 
+
 				</div>
 			</div>
 		</div>
@@ -78,7 +78,7 @@
 			<div class="col-md-3">
 				<div class="category-sidebar">
 					<div class="widget category-list">
-                        <h4 class="widget-header">All Category</h4>
+                        <h4 class="widget-header">All Faculties</h4>
                         <ul class="category-list">
                             @foreach ( $categories_all as $category_all)
                                 <li><a href="{{ route('category', [$category_all->id]) }} ">{{ $category_all->name}} <span>{{$category_all->companies->count()}}</span></a></li>
@@ -93,9 +93,9 @@
                         @if (count($companies) > 0)
                             @foreach ($companies as $company)
                                 <div class="col-sm-12 col-lg-4 col-md-6">
-                                
+
                                     <!-- product card -->
-                            
+
                                     <div class="product-item bg-light">
                                         <div class="card">
                                             <div class="thumb-content">

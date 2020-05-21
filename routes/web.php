@@ -1,4 +1,5 @@
 <?php
+
 Route::get('/', 'HomePageController@index');
 Route::get('search', 'HomePageController@table')->name('search');
 Route::get('categories/{category}', 'HomePageController@category')->name('category');
@@ -25,7 +26,7 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     Route::delete('cities/destroy', 'CitiesController@massDestroy')->name('cities.massDestroy');
     Route::resource('cities', 'CitiesController');
 
-    // Categories
+    // Faculties
     Route::delete('categories/destroy', 'CategoriesController@massDestroy')->name('categories.massDestroy');
     Route::resource('categories', 'CategoriesController');
 

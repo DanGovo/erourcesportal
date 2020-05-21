@@ -13,8 +13,8 @@
 			<div class="col-md-12">
 				<!-- Header Contetnt -->
 				<div class="content-block">
-					<h1>Buy & Sell Near You </h1>
-					<p>Join the millions who buy and sell from each other <br> everyday in local communities around the world</p>
+					<h1>Ebooks & Past Exam Papers </h1>
+					<p>Marondera University of Agricultural Sciences and Technology <br> E-Resources Portal</p>
 				</div>
 				<!-- Advance Search -->
 				<div class="advance-search">
@@ -22,7 +22,7 @@
 
                         <div class="form-row">
                             <div class="form-group col-md-4">
-                                <input type="text" name="search" value="{{ old('search') }}" class="form-control" placeholder="Search company" />
+                                <input type="text" name="search" value="{{ old('search') }}" class="form-control" placeholder="Search E-Resource" />
                                 <p class="help-block"></p>
                                 @if($errors->has('name'))
                                     <p class="help-block">
@@ -87,8 +87,8 @@
 			<div class="col-12">
 				<!-- Section title -->
 				<div class="section-title">
-					<h2>All Categories</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis, provident!</p>
+					<h2>All Faculties</h2>
+					<p>The E-Resource Portal where you find Ebooks and Past Exam Papers</p>
 				</div>
                 <div class="row">
                     @foreach ($categories_all->take(8) as $category_all)
